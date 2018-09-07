@@ -77,6 +77,16 @@ div#salmon {
     border-radius: 2vw;
 }
 
+div#credits {
+    text-align: center;
+    color: white;
+    font-size: 0.75vw;
+    bottom: 0.25vw;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+
 div.title {
     font-size: 2vw;
     color: rgba(255, 255, 255, 1);
