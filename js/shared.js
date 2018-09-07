@@ -128,7 +128,7 @@ sushiDatabase = {
 
 let peopleList = new People([]);
 peopleList.convertFromJSON(sushiDatabase);
-let results = ["NO", "MAYBE", "YES"];
+let results = ["NO.", "MAYBE¿", "YES."];
 
 document.getElementById("input").onkeypress = function(e){
     if (!e) e = window.event;

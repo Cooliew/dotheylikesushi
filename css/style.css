@@ -15,9 +15,18 @@ body {
     background-color: darkolivegreen;   
 }
 
+a {
+    color: lightgrey;
+}
+
+a:hover {
+    color: white;
+}
+
 h2 {
     padding: 0;
     margin: 0;
+    font-size: 4vw;
 }
 
 div {
@@ -27,7 +36,7 @@ div {
 
 div#result {
     margin-top: 10%;
-    font-size: 1.5em;
+    font-size: 5vw;
     color: rgba(255, 255, 255, 1);
     text-align: center;
     font-weight: 500;
@@ -35,7 +44,7 @@ div#result {
 
 div#sauce {
     margin-top: 1%;
-    font-size: 1.5em;
+    font-size: 0.75vw;
     color: rgba(255, 255, 255, 1);
     text-align: center;
     font-weight: 500;
@@ -43,8 +52,9 @@ div#sauce {
 
 div#conflict {
     margin-top: 10%;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: darkolivegreen;
+    text-align: center;
     font-weight: 500;
 }
 
@@ -56,24 +66,19 @@ div#rice {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    padding: 20% 25%;
-    border-radius: 2em;
+    padding: 2vw;
+    border-radius: 2vw;
 }
 
 div#salmon {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 10%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    margin: 1vw;
+    padding: 5%;
     background-color: rgba(247, 135, 100, 1);
-    border-radius: 2em;
+    border-radius: 2vw;
 }
 
 div.title {
-    font-size: 2em;
+    font-size: 2vw;
     color: rgba(255, 255, 255, 1);
     text-align: center;
     font-weight: 600;
@@ -81,11 +86,11 @@ div.title {
 
 input.celebrity_input {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
     text-align: center;
     padding: 2%;
-    width: 100%;
+    width: 66%;
     height: 100%;
     box-sizing: border-box;
     background: 0;
