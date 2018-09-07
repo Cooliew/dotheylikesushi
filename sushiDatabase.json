@@ -1,0 +1,52 @@
+{
+  "people": [
+    {
+      "fullName": "Kanye West",
+      "likesSushi": 0,
+      "sushiSource": "https://www.thesun.co.uk/tvandshowbiz/4842284/kanye-west-own-food-sushi-restaurant-kim-kardashian/",
+      "date": 20171104
+    },
+    {
+      "fullName": "Lil Wayne",
+      "likesSushi": 0,
+      "sushiSource": "https://youtu.be/8gyLR4NfMiI?t=2m48s",
+      "date": 20110310
+    },
+    {
+      "fullName": "Chris Brown",
+      "likesSushi": 1,
+      "sushiSource": "https://www.capitalxtra.com/artists/chris-brown/news/royalty-4th-birthday-party/",
+      "date": 20180526
+    },
+    {
+      "fullName": "Miley Cyrus",
+      "likesSushi": 2,
+      "sushiSource": "http://www.dailymail.co.uk/tvshowbiz/article-4359934/Liam-Hemsworth-treats-Miley-Cyrus-sushi-date-night.html",
+      "date": 20170329
+    },
+    {
+      "fullName": "Liam Hemsworth",
+      "likesSushi": 2,
+      "sushiSource": "http://www.dailymail.co.uk/tvshowbiz/article-4359934/Liam-Hemsworth-treats-Miley-Cyrus-sushi-date-night.html",
+      "date": 20170329
+    },
+    {
+      "fullName": "Chris Hemsworth",
+      "likesSushi": 2,
+      "sushiSource": "http://www.dailymail.co.uk/tvshowbiz/article-5903891/Chris-Hemsworth-fails-high-five-sushi-restaurant-owner.html",
+      "date": 20180630
+    },
+    {
+      "fullName": "Jennifer Lawrence",
+      "likesSushi": 2,
+      "sushiSource": "https://www.smh.com.au/entertainment/celebrity/recoupled-jennifer-lawrence-and-chris-martin-eat-sushi-together-20150102-12gryj.html",
+      "date": 20150102
+    },
+    {
+      "fullName": "Gabe Newell",
+      "likesSushi": 2,
+      "sushiSource": "https://imgur.com/a8T6Vfa",
+      "date": 20160811
+    }
+  ]
+}
