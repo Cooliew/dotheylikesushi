@@ -55,8 +55,6 @@ class People {
         for (let i = 0; i < this._people.length; i++) {
             if (fullName === this._people[i].fullName) {
                 return this._people[i]
-            } else {
-                console.log("nope fuck you " + this._people[i].fullName)
             }
         }
         return false
@@ -128,22 +126,29 @@ sushiDatabase = {
 
 let peopleList = new People([]);
 peopleList.convertFromJSON(sushiDatabase);
-let results = ["NO.", "MAYBE¿", "YES."];
+let results = ["NO.", "MAYBE?", "YES."];
 
 document.getElementById("input").onkeypress = function(e){
     if (!e) e = window.event;
-    console.log(e.key);
     if (e.key === "Enter"){
         let fullName = document.getElementById("input").value;
-        updatePage(fullName);
+        updatePage(peopleList.getPerson(fullName));
     }
 };
 
-function updatePage(fullname) {
-    let person = peopleList.getPerson(fullname);
-    document.getElementById("result").innerHTML = results[person.likesSushi];
-    document.getElementById("result").style.visibility = "visible";
-    document.getElementById("sauce").childNodes[0].href = person.sushiSource;
-    document.getElementById("sauce").style.visibility = "visible";
-    document.getElementById("conflict").style.visibility = "visible";
+function updatePage(person) {
+    if (person) {
+        document.getElementById("result").innerHTML = results[person.likesSushi];
+        document.getElementById("result").style.visibility = "visible";
+        document.getElementById("source").setAttribute("href", person.sushiSource);
+        document.getElementById("sauce").style.visibility = "visible";
+        document.getElementById("conflict").style.visibility = "visible";
+        document.getElementById("maillink").innerHTML = "have you seen a conflicting soy source?"
+    } else {
+        document.getElementById("result").innerHTML = results[1];
+        document.getElementById("result").style.visibility = "visible";
+        document.getElementById("sauce").style.visibility = "hidden";
+        document.getElementById("conflict").style.visibility = "visible";
+        document.getElementById("maillink").innerHTML = "can you find a delicious soy source?"
+    }
 }
