@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* color1: rgba(221, 255, 217, 1); NYANZA */
+/* color2: rgba(55, 61, 32, 1); OLIVE DRAB (#7) */
+/* color3: rgba(229, 89, 52, 1); FLAME */
+/* color4: rgba(217, 89, 76, 1); JELLY BEAN */
+/* color5: rgba(247, 135, 100, 1); SALMON */
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: darkolivegreen;   
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+div#result {
+    margin-top: 10%;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 500;
+}
+
+div#sauce {
+    margin-top: 1%;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 500;
+}
+
+div#conflict {
+    margin-top: 10%;
+    font-size: 1.5em;
+    color: darkolivegreen;
+    font-weight: 500;
+}
+
+div#rice {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 20% 25%;
+    border-radius: 2em;
+}
+
+div#salmon {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(247, 135, 100, 1);
+    border-radius: 2em;
+}
+
+div.title {
+    font-size: 2em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-weight: 600;
+}
+
+input.celebrity_input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: 0;
+    border: 0;
+    border-bottom: 0.05em solid rgba(255, 255, 255, 1);
+}
