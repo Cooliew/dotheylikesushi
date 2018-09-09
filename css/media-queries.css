@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    div#rice {
+        top: 25vw;
+        width: 80%;
+        background-color: red;
+    }
+    
+}
