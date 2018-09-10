@@ -1,8 +1,41 @@
-@media only screen and (max-width: 600px) {
-    div#rice {
-        top: 25vw;
-        width: 80%;
-        background-color: red;
+@media only screen and (max-width: 1080px) {
+    div#result {
+        font-size: 10vw;
     }
-    
+
+    div#sauce {
+        font-size: 3vw;
+    }
+
+    div#conflict {
+        font-size: 3vw;
+    }
+
+    div#rice {
+        top: 50vh;
+        width: 80%;
+        padding: 5vw;
+    }
+
+    div#salmon {
+
+    }
+
+    div#credits {
+        font-size: 2vw;
+        bottom: 1vw;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+    }
+
+    div.title {
+        font-size: 4vw;
+    }
+
+    input.celebrity_input {
+        font-size: 5vw;
+        padding: 2vw;
+        width: 66%;
+    }
 }
