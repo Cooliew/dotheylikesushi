@@ -1,3 +1,6 @@
+var url = new URL(window.location.href);
+var linkName = url.searchParams.get("p");
+
 class Person {
     constructor(fullName, likesSushi, sushiSource, date) {
         this._fullName = fullName;
@@ -85,7 +88,7 @@ document.getElementById("input").onkeypress = function(e){
     if (!e) e = window.event;
     if (e.key === "Enter"){
         let fullName = document.getElementById("input").value;
-        updatePage(peopleList.getPerson(fullName));
+        window.location.href = "http://www.dotheylikesushi.com?p=" + fullName.replace(/\s/g,"_").toLowerCase();
     }
 };
 
@@ -98,22 +101,34 @@ document.getElementById("submission").onkeypress = function(e){
 
 function updatePage(person) {
     if (person) {
+        document.getElementById("input").value = person;
         document.getElementById("result").innerHTML = results[person.likesSushi];
         document.getElementById("result").style.visibility = "visible";
         document.getElementById("source").setAttribute("href", person.sushiSource);
         document.getElementById("sauce").style.visibility = "visible";
         document.getElementById("conflict").style.visibility = "visible";
-        document.getElementById("maillink").innerHTML = "have you seen a conflicting soy source?"
+        document.getElementById("maillink").innerHTML = "have you seen a conflicting soy source?";
     } else {
         document.getElementById("result").innerHTML = results[1];
         document.getElementById("result").style.visibility = "visible";
         document.getElementById("sauce").style.visibility = "hidden";
         document.getElementById("conflict").style.visibility = "visible";
         document.getElementById("maillink").innerHTML = "can you find a delicious soy source?";
-        document.getElementById("maillink").href = "/submissions.html"
+        document.getElementById("maillink").href = "/submissions.html";
     }
 }
 
 function createSubmission(fullName, likesSushi, source) {
     
+}
+
+function toTitleCase(str) {
+    return str.replace(/\w\S*/g, function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+    );
+}
+
+if (linkName != null) {
+    updatePage(toTitleCase(linkName.replace(/_/g," ")));
 }
