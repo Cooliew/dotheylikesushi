@@ -89,6 +89,13 @@ document.getElementById("input").onkeypress = function(e){
     }
 };
 
+document.getElementById("submission").onkeypress = function(e){
+    if (!e) e = window.event;
+    if (e.key === "Enter"){
+        
+    }
+};
+
 function updatePage(person) {
     if (person) {
         document.getElementById("result").innerHTML = results[person.likesSushi];
@@ -102,6 +109,11 @@ function updatePage(person) {
         document.getElementById("result").style.visibility = "visible";
         document.getElementById("sauce").style.visibility = "hidden";
         document.getElementById("conflict").style.visibility = "visible";
-        document.getElementById("maillink").innerHTML = "can you find a delicious soy source?"
+        document.getElementById("maillink").innerHTML = "can you find a delicious soy source?";
+        document.getElementById("maillink").href = "/submissions.html"
     }
+}
+
+function createSubmission(fullName, likesSushi, source) {
+    
 }
