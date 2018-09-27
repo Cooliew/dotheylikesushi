@@ -5,6 +5,7 @@
 /* color3: rgba(229, 89, 52, 1); FLAME */
 /* color4: rgba(217, 89, 76, 1); JELLY BEAN */
 /* color5: rgba(247, 135, 100, 1); SALMON */
+/* buff: F4E285 */
 
 html{
     font-family: 'Raleway', sans-serif;
@@ -12,7 +13,7 @@ html{
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: darkolivegreen;   
+    background-color: #66834D;   
 }
 
 a {
@@ -62,14 +63,16 @@ div#rice {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     padding: 2vw;
-    border-radius: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw rgba(0,0,0,1);
 }
 
 div#salmon {
     margin: 1vw;
     padding: 5vw;
     background-color: rgba(247, 135, 100, 1);
-    border-radius: 2vw;
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.2vw rgba(0,0,0,1);
 }
 
 div#credits {

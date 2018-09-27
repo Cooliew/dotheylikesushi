@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 960px) {
     div#result {
         font-size: 10vw;
     }
@@ -15,10 +15,11 @@
         top: 50vh;
         width: 80%;
         padding: 5vw;
+        box-shadow: 0.5vw 0.5vw rgba(0,0,0,1);
     }
 
     div#salmon {
-
+        box-shadow: 0.5vw 0.5vw rgba(0,0,0,1);
     }
 
     div#credits {
